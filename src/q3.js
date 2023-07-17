@@ -7,8 +7,14 @@
 */
 
 const dog = {
-    petName:"Bobby"
+    petName:"Bobby",
+    breed: "Poodle"
 }
+
+for (const property in dog) {
+    console.log(`${property}: ${dog[property]}`)
+  }
+  
 
 // Task 1: Add code here
 
