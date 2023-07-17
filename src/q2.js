@@ -12,8 +12,12 @@
 
 // Task 1: Add code here
 
+const patients = []
+
+
 function addPatient(patientName){
     // Task 2: Add code here
+    patients.push(patientName)
 }
 
 // Task 3: Add code here
@@ -22,5 +26,12 @@ function addPatient(patientName){
 addPatient("John");
 addPatient("Mary");
 addPatient("Mark");
+
+function listPatient(){
+    for (let i = 0; i < patients.length; i++) {
+        console.log(patients[i]) ;
+      }
+}
+
 
 listPatient(); // This should list ["John", "Mary", "Mark"]
